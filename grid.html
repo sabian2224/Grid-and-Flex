@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /*Grids Styling*/
+    .grid1 {
+      display: grid;
+      grid-template-columns: 200px 100px ;
+      margin-bottom: 60px;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 200px 1fr ;
+      margin-bottom: 60px;
+    }
+
+
+    .grid3{
+      display: grid;
+      grid-template-columns: 100px 1fr  200px;
+      margin-bottom: 60px;
+    }
+
+
+    .grid4 {
+      display: grid;
+      grid-template-columns: 100px 1fr  2fr;
+      margin-bottom: 60px;
+    }
+
+
+    .grid5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+    }
+
+    /*End Grid Styling*/
+
+
+    /*Columns Styling*/
+    .col{
+      background-color: lightseagreen;
+      border: 2px solid rgb(237, 239, 131);
+      padding: 10px;
+      color: rgb(237, 239, 131);
+    }
+
+    .special-col {
+      background-color: lightseagreen;
+      border: 2px solid rgb(237, 239, 131);
+      padding: 10px;
+      color: rgb(237, 239, 131);
+      height: 200px;
+    }
+
+
+
+
+    /*End Columns Styling*/
+  </style>
+
+
+</head>
+<body>
+
+  <!-- Example 1 -->
+   <h3>Example 1</h3>
+  <div class="grid1">
+    <div class="col">200px</div>
+    <div class="col">100px</div>
+  </div>
+
+
+  <!-- Example 2 -->
+   <h3>Example 2</h3>
+  <div class="grid2">
+    <div class="col">200px</div>
+    <div class="col">1fr</div>
+  </div>
+
+
+  <!-- Example 3 -->
+  <h3>Example 3</h3>
+   <div class="grid3">
+    <div class="col">100px</div>
+    <div class="col">1fr</div>
+    <div class="col">200px</div>
+   </div>
+
+  <!-- Example 4 -->
+  <h3>Example 4</h3>
+   <div class="grid4">
+    <div class="col">100px</div>
+    <div class="col">1fr</div>
+    <div class="col">2fr</div>
+   </div>
+
+   <!-- Example 5 -->
+
+   <h3>Example 5</h3>
+   <div class="grid5">
+    <div class="special-col">1fr</div>
+    <div class="special-col">1fr</div>
+    <div class="special-col">1fr</div>
+
+
+    <div class="special-col">1fr</div>
+    <div class="special-col">1fr</div>
+    <div class="special-col">1fr</div>
+   </div>
+   
+  
+</body>
+</html>

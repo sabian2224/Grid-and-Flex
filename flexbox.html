@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 1000px;
+    } 
+
+    .border{
+      border: 2px solid black;
+    }
+
+
+    /*Flex Styling*/
+
+    .flex-box {
+      display: flex;
+      margin-bottom: 60px;
+    }
+
+    .flex-pro {
+      display: flex;
+      height: 200px;
+      border: 3px solid black;
+
+      align-items:center;
+      justify-content: space-between;
+      margin-bottom: 200px;
+    }
+
+    .flex-pro1 {
+      display: flex;
+      height: 200px;
+      border: 3px solid black;
+      align-items:stretch;
+      justify-content: space-between;
+      margin-bottom: 200px;
+    }
+
+    .flex-pro1 .right-side {
+      display: flex;
+      align-items: start;
+
+    }
+
+
+    .flex-pro2 {
+      display: flex;
+      height: 200px;
+      flex-direction: column;
+
+      align-items:stretch;
+      justify-content: space-between;
+      margin-bottom: 200px;
+    }
+
+
+    
+    .flex-pro2 div{
+      padding: 0 !important;
+    }
+
+
+
+    /*End Flex Styling*/
+
+    
+
+
+    /*Column Styling*/
+    .col {
+      background-color: rgb(111, 207, 111);
+      border: 2px solid white;
+      color: rgb(55, 75, 93);
+      padding: 10px;
+    }
+
+    .col-100{
+      width: 100px;
+    }
+
+    .col-200 {
+      width: 200px;
+    }
+
+    .col-flex--1 {
+      flex: 1;
+    }
+
+    .col-flex--2 {
+      flex: 2;
+    }
+
+
+    /*End Column Styling*/
+
+    /*Cell Styling*/
+    .cell {
+      padding: 10px;
+      background-color: red;
+    }
+    /*End Cell Styling*/
+  </style>
+  <title>Flexbox</title>
+</head>
+<body>
+
+  <!-- Example 1 -->
+   <h3>Example 1</h3>
+
+   <div class="flex-box">
+    <div class="col col-100">100px</div>
+    <div class="col col-200">200px</div>
+   </div>
+
+
+   
+  <!-- Example 2 -->
+  <h3>Example 2</h3>
+
+  <div class="flex-box">
+   <div class="col col-100">100px</div>
+   <div class="col col-flex--1">FLEX 1</div>
+  </div>
+
+
+   <!-- Example 3 -->
+   <h3>Example 3</h3>
+
+   <div class="flex-box">
+    <div class="col col-100">100px</div>
+    <div class="col col-flex--1">FLEX 1</div>
+    <div class="col col-200">200px</div>
+   </div>
+
+    <!-- Example 4 -->
+    <h3>Example 4</h3>
+
+    <div class="flex-box">
+     <div class="col col-100">100px</div>
+     <div class="col col-flex--1">FLEX 1</div>
+     <div class="col col-flex--2">FLEX 2</div>
+    </div>
+
+
+
+    <!-- Example 5 -->
+    <h3 style="margin-top: 200px;">Example 5</h3>
+
+    <div class="flex-pro">
+
+     <div class="col col-100">100px</div>
+     <div class="col col-100">100px</div>
+     <div class="col col-100">100px</div>
+
+    </div>
+
+
+    <!-- Example 6 Nested Flexboxes -->
+    <h3>Example 6 - Nested Flexboxes</h3>
+
+    <div class="flex-pro1">
+
+      <div class="col col-flex--1"></div>
+
+      <div class="col col-flex--1 right-side">
+        <div class="col col-100">100px</div>
+        <div class="col col-100">100px</div>
+      </div>
+
+     </div>
+
+     <!-- Example 8 -->
+
+    <h3>Example 7 - Nested Flexboxes</h3>
+
+    <div class="flex-pro2">
+
+      <div class="col col-flex--1"></div>
+
+      <div class="col col-flex--1"></div>
+
+      <div class="col col-flex--1"></div>
+      
+     </div>
+
+
+
+  
+</body>
+</html>
